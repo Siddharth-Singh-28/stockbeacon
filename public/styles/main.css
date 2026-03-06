@@ -173,3 +173,50 @@ main{
 .footer a:hover{
   color:white;
 }
+
+.stock-page{
+margin-top:40px;
+color:#eee;
+}
+
+.stock-hero{
+text-align:center;
+margin-bottom:40px;
+}
+
+.stock-hero h1{
+font-size:40px;
+font-weight:600;
+}
+
+.price{
+font-size:48px;
+margin-top:10px;
+}
+
+.chart-container{
+background:#121212;
+padding:25px;
+border-radius:10px;
+margin-bottom:40px;
+}
+
+.stock-stats{
+gap:20px;
+}
+
+.stat-card{
+background:#121212;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.stat-card p{
+color:#888;
+margin-bottom:5px;
+}
+
+.stat-card h5{
+font-size:20px;
+}
