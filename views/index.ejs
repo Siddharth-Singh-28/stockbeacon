@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>StockBeacon</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+
+<%- include("partials/header") %>
+
+<main>
+
+<!-- HERO -->
+<section class="hero-section text-center">
+
+  <h1 class="hero-title">StockBeacon</h1>
+
+  <p class="hero-subtitle">
+    Track stock prices instantly
+  </p>
+
+  <form action="/stock" method="POST" class="hero-search">
+
+    <div class="input-group input-group-lg">
+
+      <input
+        type="text"
+        name="symbol"
+        class="form-control hero-input"
+        placeholder="Enter stock symbol (AAPL, TSLA...)"
+        required>
+
+      <button class="btn hero-btn">
+        Search
+      </button>
+
+    </div>
+
+  </form>
+
+</section>
+
+
+
+<!-- TRENDING -->
+<section class="container trending-section">
+
+  <h3 class="section-title">Trending Stocks</h3>
+
+  <div class="row g-4 mt-2">
+
+    <div class="col-md-3">
+      <div class="stock-card p-3">
+        <h5>AAPL</h5>
+        <p class="stock-name">Apple Inc.</p>
+        <span class="text-success">+1.25%</span>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="stock-card p-3">
+        <h5>TSLA</h5>
+        <p class="stock-name">Tesla</p>
+        <span class="text-danger">-0.42%</span>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="stock-card p-3">
+        <h5>MSFT</h5>
+        <p class="stock-name">Microsoft</p>
+        <span class="text-success">+0.98%</span>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="stock-card p-3">
+        <h5>NVDA</h5>
+        <p class="stock-name">Nvidia</p>
+        <span class="text-success">+2.10%</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<%- include("partials/footer") %>
+
+</body>
+</html>

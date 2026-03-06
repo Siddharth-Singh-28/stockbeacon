@@ -1,0 +1,175 @@
+/* GLOBAL LAYOUT */
+
+html, body{
+  height:100%;
+}
+
+body{
+  background:#0b0b0f;
+  color:#e5e7eb;
+  font-family:'Inter', sans-serif;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+main{
+  flex:1;
+}
+
+
+
+/* NAVBAR */
+
+.custom-navbar{
+  background:#0b0b0f;
+  border-bottom:1px solid #1f1f27;
+}
+
+
+
+/* LOGO */
+
+.site-logo{
+  font-weight:600;
+  font-size:20px;
+  color:#60a5fa;
+  text-decoration:none;
+}
+
+.site-logo:hover{
+  color:#93c5fd;
+}
+
+
+
+/* HERO SECTION */
+
+.hero-section{
+  padding-top:100px;
+  padding-bottom:80px;
+}
+
+.hero-title{
+  font-size:52px;
+  font-weight:600;
+  color: #60a5fa;
+}
+
+.hero-subtitle{
+  color:#9ca3af;
+  margin-top:10px;
+}
+
+.hero-search{
+  max-width:520px;
+  margin:auto;
+  margin-top:35px;
+}
+
+
+
+/* HERO SEARCH INPUT */
+
+.hero-input{
+  background:#121218;
+  border:1px solid #1f1f27;
+  color:#e5e7eb;
+}
+
+.hero-input:focus{
+  background:#121218;
+  border-color:#60a5fa;
+  box-shadow:none;
+}
+
+
+
+/* HERO SEARCH BUTTON */
+
+.hero-btn{
+  background:#1f2937;
+  border:1px solid #374151;
+  color:#e5e7eb;
+}
+
+.hero-btn:hover{
+  background:#374151;
+}
+
+
+
+/* HEADER SEARCH BAR */
+
+.header-input{
+  background:#121218;
+  border:1px solid #1f1f27;
+  color:#e5e7eb;
+}
+
+.header-input:focus{
+  border-color:#60a5fa;
+  box-shadow:none;
+}
+
+.header-btn{
+  background:#1f2937;
+  border:1px solid #374151;
+  color:#e5e7eb;
+}
+
+.header-btn:hover{
+  background:#374151;
+}
+
+
+
+/* TRENDING SECTION */
+
+.trending-section{
+  margin-top:40px;
+}
+
+.section-title{
+  font-size:24px;
+  font-weight:600;
+}
+
+
+
+/* STOCK CARDS */
+
+.stock-card{
+  background:#121218;
+  border:1px solid #1f1f27;
+  border-radius:10px;
+  transition:0.2s ease;
+  cursor:pointer;
+}
+
+.stock-card:hover{
+  border-color:#60a5fa;
+}
+
+.stock-name{
+  color:#9ca3af;
+  font-size:14px;
+}
+
+
+
+/* FOOTER */
+
+.footer{
+  background:#0b0b0f;
+  border-top:1px solid #1f1f27;
+  color:#9ca3af;
+}
+
+.footer a{
+  color:#9ca3af;
+}
+
+.footer a:hover{
+  color:white;
+}
